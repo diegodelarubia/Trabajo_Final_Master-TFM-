@@ -228,24 +228,18 @@ def procesar_fecha(fecha):
 ######################################################################################################################
 # 5 Crear un boxplot_px variable numerico
 
-
 def graficar_boxplot_px(df, variable_analisis):
-    # Crear el boxplot usando Plotly Express
+    df = df.dropna(subset=[variable_analisis])
+
     fig = px.box(df, y=variable_analisis)
 
-    # Actualizar títulos del gráfico
-    fig.update_layout(title=f"Boxplot: {variable_analisis}", yaxis_title="Frecuencia")
-
-    # Actualizar el fondo del gráfico a blanco
     fig.update_layout(
-        {
-            "plot_bgcolor": "rgba(255, 255, 255, 1)",
-            "xaxis": {"showgrid": True, "gridcolor": "lightgrey"},
-            "yaxis": {"showgrid": True, "gridcolor": "lightgrey"},
-        }
+        title=f"Boxplot de {variable_analisis}",
+        yaxis_title=variable_analisis,
+        plot_bgcolor="white",
+        yaxis=dict(showgrid=True, gridcolor="lightgrey")
     )
 
-    # Mostrar el gráfico
     fig.show()
 
 
