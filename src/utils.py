@@ -282,13 +282,16 @@ def limites_outliers(df, nombre_columna):
 ###################
 
 def jobType(valor):
-    no_job = ['student','retired','unemployed']
+    no_job = ['student','unemployed']
     office_job = ['services','admin.','management']
     physical_job = ['housemaid','blue-collar','technician']
     self_employed = ['entrepreneur','self-employed']
+    retired = 'retired'
 
-    if valor in no_job:
-        return 'No Job or Retired'
+    if valor == retired:
+        return 'Retired'
+    elif valor in no_job:
+        return 'No Job or Student'
     elif valor in office_job:
         return 'Office Job'
     elif valor in physical_job:
@@ -313,3 +316,30 @@ def educationType(valor):
         return "University or Professional Program"
     else:
         return 'Unknown or Illiterate' 
+    
+############
+
+def previouslyContacted(valor):
+    
+    if valor == 0:
+        return "Prospect"
+    else:
+        return "Retargeting"
+    
+###########
+
+def seasons(valor):
+
+    invierno = ['jan','feb,','mar']
+    primavera = ['jun','apr','may']
+    verano = ['sep','jul','aug']
+    otonyo = ['dec','oct','nov']
+
+    if valor in invierno:
+        return 'Winter'
+    elif valor in primavera:
+        return 'Spring'
+    elif valor in verano:
+        return 'Summer'
+    else:
+        return 'Otoño'
