@@ -45,21 +45,40 @@ Variable objetivo:
 ```
 TFM_FINTECH
 │
-├── data
-│   └── bank-additional-full.csv
+├── Data
+│   └── bank-additional_bank-additional-full.csv
 │
-├── notebooks
-│   └── TFM_analysis.ipynb
+├── notebooks_originales
+│   ├── analysis_tfm_leoBetancourt.ipynb
+│   ├── plantilla_kpis_TFM.ipynb
+│   ├── TFM_diego.ipynb
+│   └── TFM_leo.ipynb
 │
-├── src
-│   ├── utils_analysis.py
-│   └── utils_visualization.py
+├── TFM_Final
+│   ├── functions.py
+│   └── main.ipynb
 │
-├── requirements.txt
-│
-└── README.md
+├── README.md
+└── requirements.txt
 ```
+## Descripción de las carpetas
 
+**Data**  
+Contiene el dataset utilizado para el análisis.
+
+**notebooks_originales**  
+Incluye los notebooks desarrollados individualmente durante las fases iniciales del proyecto.
+
+**TFM_Final**  
+Contiene la versión final unificada del proyecto:
+- `main.ipynb` → notebook final con todo el análisis
+- `functions.py` → funciones auxiliares utilizadas en el análisis
+
+**requirements.txt**  
+Listado de librerías necesarias para ejecutar el proyecto.
+
+**README.md**  
+Documentación del repositorio.
 ---
 
 # Tecnologías utilizadas
@@ -96,7 +115,7 @@ pip install -r requirements.txt
 Abrir el notebook principal:
 
 ```
-notebooks/TFM_analysis.ipynb
+TFM_Final/main.ipynb
 ```
 
 Ejecutar las celdas en orden para reproducir el análisis completo.
