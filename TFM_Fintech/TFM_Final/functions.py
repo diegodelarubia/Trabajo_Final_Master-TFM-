@@ -271,3 +271,68 @@ def limites_outliers(df, nombre_columna):
     )
 
     return limite_inferior, limite_superior
+    
+###################
+
+def jobType(valor):
+    no_job = ['student','unemployed']
+    office_job = ['services','admin.','management']
+    physical_job = ['housemaid','blue-collar','technician']
+    self_employed = ['entrepreneur','self-employed']
+    retired = 'retired'
+
+    if valor == retired:
+        return 'Retired'
+    elif valor in no_job:
+        return 'No Job or Student'
+    elif valor in office_job:
+        return 'Office Job'
+    elif valor in physical_job:
+        return "Physical Job"
+    elif valor in self_employed:
+        return "Self-Employed"
+    else:
+        return 'Unknown' 
+    
+##########
+
+def educationType(valor):
+    basic_education = ['basic.4y','basic.6y','basic.9y']
+    high_school = ['high.school']
+    higher_education = ['university.degree','professional.course']
+
+    if valor in basic_education:
+        return 'Basic Education (Yr 4-9)'
+    elif valor in high_school:
+        return 'High School'
+    elif valor in higher_education:
+        return "University or Professional Program"
+    else:
+        return 'Unknown or Illiterate' 
+    
+############
+
+def previouslyContacted(valor):
+    
+    if valor == 0:
+        return "Prospect"
+    else:
+        return "Retargeting"
+    
+###########
+
+def seasons(valor):
+
+    invierno = ['jan','feb,','mar']
+    primavera = ['jun','apr','may']
+    verano = ['sep','jul','aug']
+    otonyo = ['dec','oct','nov']
+
+    if valor in invierno:
+        return 'Winter'
+    elif valor in primavera:
+        return 'Spring'
+    elif valor in verano:
+        return 'Summer'
+    else:
+        return 'Otoño'
