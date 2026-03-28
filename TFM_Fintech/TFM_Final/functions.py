@@ -335,4 +335,4 @@ def seasons(valor):
     elif valor in verano:
         return 'Summer'
     else:
-        return 'Otoño'
+        return 'Fall'
