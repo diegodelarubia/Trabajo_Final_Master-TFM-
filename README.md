@@ -45,40 +45,21 @@ Variable objetivo:
 ```
 TFM_FINTECH
 │
-├── Data
-│   └── bank-additional_bank-additional-full.csv
+├── data
+│   └── bank-additional-full.csv
 │
-├── notebooks_originales
-│   ├── analysis_tfm_leoBetancourt.ipynb
-│   ├── plantilla_kpis_TFM.ipynb
-│   ├── TFM_diego.ipynb
-│   └── TFM_leo.ipynb
+├── notebooks
+│   └── TFM_analysis.ipynb
 │
-├── TFM_Final
-│   ├── functions.py
-│   └── main.ipynb
+├── src
+│   ├── utils_analysis.py
+│   └── utils_visualization.py
 │
-├── README.md
-└── requirements.txt
+├── requirements.txt
+│
+└── README.md
 ```
-## Descripción de las carpetas
 
-**Data**  
-Contiene el dataset utilizado para el análisis.
-
-**notebooks_originales**  
-Incluye los notebooks desarrollados individualmente durante las fases iniciales del proyecto.
-
-**TFM_Final**  
-Contiene la versión final unificada del proyecto:
-- `main.ipynb` → notebook final con todo el análisis
-- `functions.py` → funciones auxiliares utilizadas en el análisis
-
-**requirements.txt**  
-Listado de librerías necesarias para ejecutar el proyecto.
-
-**README.md**  
-Documentación del repositorio.
 ---
 
 # Tecnologías utilizadas
@@ -98,8 +79,8 @@ Documentación del repositorio.
 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/usuario/tfm-fintech.git
-cd tfm-fintech
+git clone https://github.com/diegodelarubia/Trabajo_Final_Master-TFM-.git
+cd Trabajo_Final_Master-TFM-
 ```
 
 Instalar dependencias:
@@ -137,10 +118,10 @@ El análisis permite:
 
 Proyecto desarrollado por:
 
-- Diego González de la Rubia  
-- María Egea Miró  
-- Leonardo Betancourt  
 - David Lombardini  
-- Miguel Retegui  
+- Diego González de la Rubia  
+- María Egea Miró 
+- Miguel Retegui 
+- Leonardo Betancourt  
 
 Máster en **Data Visualization & Analytics**
