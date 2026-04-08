@@ -25,7 +25,7 @@ Para ello se han desarrollado:
 
 # Dataset
 
-El proyecto utiliza el dataset **Bank Marketing Dataset**, que recoge información sobre campañas de marketing realizadas por una entidad financiera.
+El proyecto utiliza el dataset de una campaña de contratación de depositos, que recoge información sobre campañas de marketing realizadas por una entidad financiera.
 
 Incluye variables como:
 
@@ -76,13 +76,6 @@ TFM_FINTECH
 
 # Instalación
 
-Clonar el repositorio:
-
-```bash
-git clone https://github.com/usuario/tfm-fintech.git
-cd tfm-fintech
-```
-
 Instalar dependencias:
 
 ```bash
@@ -96,7 +89,7 @@ pip install -r requirements.txt
 Abrir el notebook principal:
 
 ```
-notebooks/TFM_analysis.ipynb
+TFM_Final/main.ipynb
 ```
 
 Ejecutar las celdas en orden para reproducir el análisis completo.
@@ -124,4 +117,4 @@ Proyecto desarrollado por:
 - David Lombardini  
 - Miguel Retegui  
 
-Máster en **Data Visualization & Analytics**
+Máster en **Data Analytics**
