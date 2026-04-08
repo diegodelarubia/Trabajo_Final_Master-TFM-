@@ -95,13 +95,6 @@ Documentación del repositorio.
 
 # Instalación
 
-Clonar el repositorio:
-
-```bash
-git clone https://github.com/usuario/tfm-fintech.git
-cd tfm-fintech
-```
-
 Instalar dependencias:
 
 ```bash
